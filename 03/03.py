@@ -2,6 +2,8 @@ from typing import TypedDict
 
 
 class Item(TypedDict):
+    """Item model"""
+
     name: str
     quantity: int
     category: str
@@ -16,13 +18,17 @@ def organizeInventory(inventory: list[Item]) -> dict[str, dict[str, int]]:
     organized_inventory = {}
 
     for item in inventory:
-        if item["category"] not in organized_inventory:
-            organized_inventory[item["category"]] = {}
+        category = item["category"]
+        name = item["name"]
+        quantity = item["quantity"]
 
-        if item["name"] not in organized_inventory[item["category"]]:
-            organized_inventory[item["category"]][item["name"]] = 0
+        if category not in organized_inventory:
+            organized_inventory[category] = {}
 
-        organized_inventory[item["category"]][item["name"]] += item["quantity"]
+        if name not in organized_inventory[category]:
+            organized_inventory[category][name] = 0
+
+        organized_inventory[category][name] += quantity
 
     return organized_inventory
 
