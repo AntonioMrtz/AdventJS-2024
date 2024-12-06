@@ -2,11 +2,24 @@ from typing import TypedDict
 
 
 class Shoe(TypedDict):
+    """Model for Shoe"""
+
     type: str
     size: int
 
 
-def organizeShoes(shoes: list[Shoe]) -> list[int]:
+def organize_shoes(shoes: list[Shoe]) -> list[int]:
+    """Get paired shoes
+
+    Args:
+        shoes (list[Shoe]): list of shoes
+
+    Raises:
+        ValueError: invalid shoe parameters
+
+    Returns:
+        list[int]: list of paired shoes
+    """
     left_shoes: dict[int, int] = {}
     right_shoes: dict[int, int] = {}
     paired_shoes: list[int] = []
@@ -44,7 +57,7 @@ shoes: list[Shoe] = [
     {"type": "I", "size": 41},
     {"type": "I", "size": 42},
 ]
-print(organizeShoes(shoes))
+print(organize_shoes(shoes))
 
 shoes2: list[Shoe] = [
     {"type": "I", "size": 38},
@@ -53,7 +66,7 @@ shoes2: list[Shoe] = [
     {"type": "I", "size": 38},
     {"type": "R", "size": 38},
 ]
-print(organizeShoes(shoes2))
+print(organize_shoes(shoes2))
 
 shoes3: list[Shoe] = [
     {"type": "I", "size": 38},
@@ -62,4 +75,4 @@ shoes3: list[Shoe] = [
     {"type": "I", "size": 41},
     {"type": "I", "size": 43},
 ]
-print(organizeShoes(shoes3))
+print(organize_shoes(shoes3))
