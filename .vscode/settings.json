@@ -1,10 +1,15 @@
 {
   "python.analysis.typeCheckingMode": "basic",
-  "python.testing.pytestArgs": ["tests"],
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "editor.defaultFormatter": "charliermarsh.ruff",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2, // Sets the number of spaces per tab
+    "editor.insertSpaces": true, // Converts tabs to spaces
+    "editor.detectIndentation": false // Prevents auto-detection of indentation style
   }
 }

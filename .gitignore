@@ -174,3 +174,8 @@ logs/
 # Git-specific ignores
 .git/
 .gitignore
+
+
+# Generated js
+*.js
+!jest.config.js
