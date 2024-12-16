@@ -11,5 +11,6 @@
     "editor.tabSize": 2, // Sets the number of spaces per tab
     "editor.insertSpaces": true, // Converts tabs to spaces
     "editor.detectIndentation": false // Prevents auto-detection of indentation style
-  }
+  },
+  "jest.runMode": "on-demand",        // Run Jest tests when you save the file
 }
