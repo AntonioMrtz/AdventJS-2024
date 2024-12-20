@@ -1,18 +1,15 @@
 {
-    "compilerOptions": {
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "target": "ES2022",
-        "jsx": "react",
-        "strictNullChecks": true,
-        "strictFunctionTypes": true,
-        "sourceMap": true,
-        "esModuleInterop": true,
-        "incremental": true,
-        "tsBuildInfoFile": "./.tsbuildinfo" // Optional: Specify where the incremental info is stored
-    },
-    "exclude": [
-        "node_modules",
-        "**/node_modules/*"
-    ]
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo" // Optional: Specify where the incremental info is stored
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
 }

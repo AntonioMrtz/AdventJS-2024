@@ -1,11 +1,22 @@
 {
+  "name": "adventjs-2024",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioMrtz/AdventJS-2024.git"
+  },
+  "homepage": "https://github.com/AntonioMrtz/AdventJS-2024/blob/main/README.md",
+  "author": {
+    "name": "Antonio Martinez Fernandez",
+    "email": "antoniomartinezfernandez17@gmail.com",
+    "url": "https://github.com/AntonioMrtz"
+  },
   "dependencies": {
-    "prettier": "^3.4.2",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
-    "ts-jest": "^29.2.5"
+    "ts-jest": "^29.2.5",
+    "prettier": "^3.4.2"
   }
 }
