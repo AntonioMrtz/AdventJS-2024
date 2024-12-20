@@ -10,6 +10,9 @@
     "email": "antoniomartinezfernandez17@gmail.com",
     "url": "https://github.com/AntonioMrtz"
   },
+  "scripts": {
+    "format": "npx prettier . --write"
+  },
   "dependencies": {
     "ts-node": "^10.9.2"
   },

@@ -1,6 +1,4 @@
-# Ignore everything by default
-**
-
-# Explicitly allow TypeScript files
-!**/*.ts
-!**/*.tsx
+.js
+**/dist
+.vscode/
+*.md

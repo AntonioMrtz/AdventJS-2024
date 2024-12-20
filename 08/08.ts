@@ -25,7 +25,7 @@ function drawRace(indices: number[], length: number): string {
     } else {
       // Construct the race line
       raceDraw += `${" ".repeat(padding)}${LINE_CHARACTER.repeat(
-        position
+        position,
       )}${REINDEER_CHARACTER}${LINE_CHARACTER.repeat(length - position - 1)} /${
         index + 1
       }`;

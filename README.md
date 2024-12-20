@@ -35,6 +35,12 @@ npx tsc x.ts && node x.js
 npx jest
 ```
 
+#### Style
+
+```console
+npx prettier . --write
+```
+
 ### Python
 
 ```console
