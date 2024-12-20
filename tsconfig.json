@@ -8,6 +8,8 @@
         "strictFunctionTypes": true,
         "sourceMap": true,
         "esModuleInterop": true,
+        "incremental": true,
+        "tsBuildInfoFile": "./.tsbuildinfo" // Optional: Specify where the incremental info is stored
     },
     "exclude": [
         "node_modules",
